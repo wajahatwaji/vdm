@@ -1,0 +1,320 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+body{
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #4A4A4A;
+    font-family: 'Roboto', sans-serif;
+}
+ul,
+ol,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+span,
+label,
+div,
+body {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.container-fluid{
+    max-width: 1640px;
+    margin: 0 auto;
+}
+button:focus {
+    outline: unset;
+}
+:focus{
+    outline: none;
+}
+img {
+    max-width: 100%;
+    margin: 0 auto;
+}
+a:hover {
+    text-decoration: none;
+    color: unset;
+}
+/* font css start */
+@font-face {
+    font-family: 'Airstrike';
+    src: url('../fonts/AirstrikeBold.woff2') format('woff2'),
+        url('../fonts/AirstrikeBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+/* font css end */
+h1{
+    font-size: 53px;
+    line-height: 66px;
+    font-weight: 700;
+    color: #293D86;
+}
+h2{
+    font-size: 44px;
+    line-height: 56px;
+    font-weight: 700;
+    color: #293D86;   
+}
+h3{
+    font-size: 30px;
+    line-height: 62px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+/* header css start */
+header {
+    padding: 37px 0;
+}
+header .navbar{
+    padding: 0px;
+}
+.navbar-brand{
+    padding: 0px;
+    color: #293D86;
+    font-weight: 500;
+}
+header .navbar-nav li a{
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #000000;
+    text-transform: capitalize;
+    margin-right: 33px;
+    border-bottom: 3px solid transparent;
+    display: inline-block;
+    position: relative;
+    padding:0 0 4px 0 !important;
+    transition: all ease-in-out 0.2s;
+}
+header .navbar-nav li a:hover{
+    border-bottom: 3px solid  #910663;
+    font-weight: 700;
+    color: #910663;
+}
+/* header .navbar-nav li a:hover::after{
+    content: "";
+    position: absolute;
+    color: #910663;
+    border-bottom: 3px solid #910663;
+    background-color: #910663;
+} */
+header .navbar-nav li:last-child a{
+    margin-right: 0px;
+}
+.cell-no span{
+    margin-right: 13px;
+}
+.cell-no a{
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #FFFFFF;
+    background-color: #910663;
+    width: 201px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+/* header css end */
+
+/* banner css start */
+.banner-content h1{
+    margin-bottom: 17px;
+}
+.banner-content p {
+    max-width: 90%;
+}
+.banner-form h3{
+    background-color: #293D86;
+    text-align: center;
+}
+.banner-form {
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgb(0 0 0 / 16%);
+}
+.banner-form form {
+    background: rgba(255,255,255,0.86);
+    padding: 49px 35px 79px;
+}
+.banner-form form input, .banner-form form textarea{
+    background: unset;
+    border: unset;
+    border-bottom: 1px solid #9A9A9A;
+    padding-bottom: 15px;
+    margin-bottom: 53px;
+    width: 100%;
+}
+.banner-form form textarea{
+    resize: none;
+    margin-bottom: 43px;
+}
+.banner-form form input::placeholder{
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #4B4B4B;
+    text-transform: capitalize;
+}
+.submit-btn{
+    border: unset;
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 700;
+    width: 100%;
+    background: #910663;
+    border-radius: 5px;
+    height: 47px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+/* banner css end */
+
+/* section medical billing starts here */
+.medical-billing{
+    /* max-height: 166px; */
+}
+.medical-billing .billing-content{
+
+    position: relative;
+    top: -95px;
+}
+.medical-billing .billing-box{
+    padding: 44px 16px;
+    -webkit-box-shadow: 0px 10px 30px 5px rgba(0,0,0,0.16); 
+box-shadow: 0px 10px 30px 5px rgba(0,0,0,0.16);
+max-width: 380px;
+text-align: center;
+}
+.medical-billing .bill-icon{
+    margin-bottom: 31px;
+}
+.medical-billing .billing-text{
+    min-height: 176px;
+}
+.medical-billing .billing-text h4{
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    color: #293D86;
+}
+.medical-billing .billing-text p{
+line-height: 30px;
+}
+
+/* section medical billing ends here */
+/* section automation starts here */
+.automation{
+    background-color: #EFF8FF;
+    text-align: center;
+    padding: 100px 0 114px;
+}
+.automation  h2{
+    max-width: 816px;
+    margin: 0 auto;
+}
+.automation .automation-content{
+    margin-top: 75px;
+}
+.automation .automation-content .automation-text p{
+max-width: 475px;
+text-align: left;
+font-size: 16px;
+line-height: 30px;
+color: #000000;
+margin-bottom: 41px;
+}
+.automation .automation-content .automation-text .learn-more{
+   text-align: left;
+}
+.automation .automation-content .automation-text .learn-more a{
+    font-size: 16px;
+    font-weight: 700;
+    color: #FFFFFF;
+    background-color: #910663;
+    text-transform: capitalize;
+    padding: 14px 15px;
+}
+.automation .automation-content .automation-text .learn-more span{
+    padding-left: 26px;
+}
+.automation .automation-content .automation-text .learn-more span img{
+    width: 26px;
+}
+.automation .automation-img{
+    display: flex;
+    justify-content: space-between;
+}
+.automation .smart-img{
+    max-width: 48%;
+}
+/* section automation ends here */
+/* section our-speciality starts here */
+.our-speciality{
+    text-align: center;
+    padding: 90px 0 100px;
+}
+.our-speciality .speciality-content{
+    margin-top: 83px;
+}
+.our-speciality .speciality-box{
+    max-width: 370px;
+    margin: 0 auto;
+    padding: 50px 40px;
+}
+.our-speciality .speciality-box .speciality-icon{
+    max-width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #EDD6E6;
+    text-align: center;
+    position: relative;
+    margin: 0 auto 33px;
+}
+.our-speciality .speciality-box .speciality-icon img{
+    width: 31px;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+.our-speciality .speciality-box-content h4{
+font-size: 18px;
+font-weight: 500;
+line-height: 24px;
+color: #293D86;
+margin-bottom: 23px;
+}
+/* section our-speciality endss here */
